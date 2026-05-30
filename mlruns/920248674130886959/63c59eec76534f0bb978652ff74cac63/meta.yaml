@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/om751/Desktop/WILP_BITS/S2_25/SE4ML/Webinars/fraud_demo/mlruns/920248674130886959/63c59eec76534f0bb978652ff74cac63/artifacts
+end_time: 1779030273393
+entry_point_name: ''
+experiment_id: '920248674130886959'
+lifecycle_stage: active
+run_id: 63c59eec76534f0bb978652ff74cac63
+run_name: luminous-hog-83
+run_uuid: 63c59eec76534f0bb978652ff74cac63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779030269501
+status: 3
+tags: []
+user_id: om751

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1779030273068
+current_stage: None
+description: null
+last_updated_timestamp: 1779030273068
+name: fraud_detector
+run_id: 63c59eec76534f0bb978652ff74cac63
+run_link: null
+source: file:///C:/Users/om751/Desktop/WILP_BITS/S2_25/SE4ML/Webinars/fraud_demo/mlruns/920248674130886959/63c59eec76534f0bb978652ff74cac63/artifacts/fraud_model
+status: READY
+status_message: null
+storage_location: file:///C:/Users/om751/Desktop/WILP_BITS/S2_25/SE4ML/Webinars/fraud_demo/mlruns/920248674130886959/63c59eec76534f0bb978652ff74cac63/artifacts/fraud_model
+user_id: null
+version: 2

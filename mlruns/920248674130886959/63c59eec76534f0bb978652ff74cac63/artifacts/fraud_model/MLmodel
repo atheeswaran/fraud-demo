@@ -1,0 +1,32 @@
+artifact_path: fraud_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+mlflow_version: 2.16.0
+model_size_bytes: 247776
+model_uuid: 80ae7ecccaa7426ead2cecd37e95e9f3
+run_id: 63c59eec76534f0bb978652ff74cac63
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "amount", "required": true}, {"type": "long",
+    "name": "hour_of_day", "required": true}, {"type": "long", "name": "is_foreign",
+    "required": true}, {"type": "long", "name": "num_transactions_last_hour", "required":
+    true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+utc_time_created: '2026-05-17 15:04:29.724947'
