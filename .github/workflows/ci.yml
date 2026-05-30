@@ -28,7 +28,7 @@ jobs:
         run: python data/generate_data.py
 
       - name: Train model
-        run: python training/step2_mlflow_train.py
+        run: python training/step1_notebook.py
 
       - name: Run quality gate tests
         run: pytest tests/ -v --tb=short
