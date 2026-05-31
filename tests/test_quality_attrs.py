@@ -170,7 +170,7 @@ class TestPerformance:
       - Is cold-start the issue? → ensure model is pre-loaded
     """
 
-   // LATENCY_THRESHOLD_MS = 200
+   " LATENCY_THRESHOLD_MS = 200
 
    LATENCY_THRESHOLD_MS = 1
 
