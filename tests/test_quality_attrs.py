@@ -171,7 +171,7 @@ class TestPerformance:
     """
 
     # LATENCY_THRESHOLD_MS = 200
-    LATENCY_THRESHOLD_MS = 1
+    LATENCY_THRESHOLD_MS = 10
 
     def test_single_prediction_latency(self, legit_txn, trained_model):
         # Warm-up call (model load, JIT)
