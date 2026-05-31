@@ -24,9 +24,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Pull versioned data with DVC
-        run: dvc pull data/fraud_data.csv --remote local_remote
+      - name: Configure DVC remote
+        run: python -m dvc remote modify local_remote url ./dvc-storage
 
+      - name: Pull versioned data with DVC
+        run: python -m dvc pull data/fraud_data.csv --remote local_remote
 
       - name: Generate dataset
         run: python data/generate_data.py
