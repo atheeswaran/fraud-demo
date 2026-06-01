@@ -24,12 +24,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Restore data from DVC cache
+      - name: Pull data from DVC cache
         run: |
           mkdir -p data
           MD5=$(python -c "import yaml; d=yaml.safe_load(open('data/fraud_data.csv.dvc')); print(d['outs'][0]['md5'])")
           cp dvc-storage/files/md5/${MD5:0:2}/${MD5:2} data/fraud_data.csv
-
+      
       - name: Generate dataset
         run: python data/generate_data.py
 
