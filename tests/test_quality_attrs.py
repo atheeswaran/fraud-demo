@@ -170,8 +170,9 @@ class TestPerformance:
       - Is cold-start the issue? → ensure model is pre-loaded
     """
 
-    LATENCY_THRESHOLD_MS = 200
-    #LATENCY_THRESHOLD_MS = 1
+    #LATENCY_THRESHOLD_MS = 200
+    
+    LATENCY_THRESHOLD_MS = 1
 
     def test_single_prediction_latency(self, legit_txn, trained_model):
         # Warm-up call (model load, JIT)
